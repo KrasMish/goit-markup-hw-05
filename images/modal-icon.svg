@@ -22,7 +22,7 @@
       </clipPath>
     </defs>
   </symbol>
-    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="close">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="close">
     <circle cx="12" cy="12" r="12" fill="#E7E9FC"></circle>
     <circle cx="12" cy="12" r="11.5" stroke="black" stroke-opacity="0.1"></circle>
     <g clip-path="url(#clip0_297083_8299)">
