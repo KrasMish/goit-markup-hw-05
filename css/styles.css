@@ -599,10 +599,8 @@ icon-container .section-second {
 .modal-container .modal .modal-button .form-close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-container .modal .modal-button .form-close-icon:hover {
-  fill: #ffffff;
-}
-.modal-container .modal .modal-button .form-close-icon:focus {
+.modal-container .modal .form-main-button:hover .form-close-icon,
+.modal-container .modal .form-main-button:focus .form-close-icon {
   fill: #ffffff;
 }
 .modal-container .modal .form-paragraph {
@@ -641,20 +639,20 @@ icon-container .section-second {
 .modal-container .modal .form-field .form-field-container .form-input:focus {
   border-color: #4d5ae5;
 }
-.modal-container
-  .modal
-  .form-field
-  .form-field-container
-  .form-input:focus
-  .modal-icon {
-  fill: #4d5ae5;
-}
 .modal-icon {
   position: absolute;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-container
+  .modal
+  .form-field
+  .form-field-container
+  .form-input:focus
+  + .modal-icon {
+  fill: #4d5ae5;
 }
 .modal-container .modal .comment {
   margin-bottom: 16px;
@@ -700,7 +698,7 @@ icon-container .section-second {
   fill: transparent;
 }
 
-.form-checkbox:checked .label-span {
+.form-checkbox:checked + .label-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
