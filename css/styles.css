@@ -641,19 +641,14 @@ icon-container .section-second {
 .modal-container .modal .form-field .form-field-container .input:focus {
   border-color: #4d5ae5;
 }
-.modal-container .modal .form-field .form-field-container .email-icon {
+.modal-container .modal .form-field .form-field-container .icon {
   position: absolute;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-container
-  .modal
-  .form-field
-  .form-field-container
-  .input:focus
-  .email-icon {
+.modal-container .modal .form-field .form-field-container .input:focus .icon {
   fill: #4d5ae5;
 }
 .modal-container .modal .comment {
@@ -671,6 +666,7 @@ icon-container .section-second {
   background-color: transparent;
   padding: 8px 16px;
   resize: none;
+  outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-container .modal .comment .comment-text:focus {
